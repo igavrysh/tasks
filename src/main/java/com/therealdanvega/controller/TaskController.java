@@ -18,6 +18,6 @@ public class TaskController {
 
     @GetMapping(value = {"", "/"})
     public  Iterable<Task> listTasks() {
-        return this.taskService.list;
+        return this.taskService.list();
     }
 }
