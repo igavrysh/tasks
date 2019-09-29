@@ -12,7 +12,6 @@ import java.time.LocalDate;
 @Entity
 @Data
 @AllArgsConstructor
-
 public class Task {
 
     @Id
@@ -23,6 +22,7 @@ public class Task {
     private LocalDate dueDate;
     private Boolean completed;
 
-
+    public Task() {
+    }
 
 }
