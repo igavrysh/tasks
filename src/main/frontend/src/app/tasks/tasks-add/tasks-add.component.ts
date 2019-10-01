@@ -16,7 +16,6 @@ export class TasksAddComponent implements OnInit {
   ngOnInit() {
   }
 
-
   onTaskAdd(event) {
     let task: Task = new Task(event.target.value, false, this.getTodayAsString());
     this.taskService.addTask(task)
